@@ -2,14 +2,17 @@ name: Generate Pac-Man Contribution Graph
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # runs every 12 hours
-  workflow_dispatch:           # allows manual run
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Generate Pac-Man Graph
         uses: Platane/snk/svg-only@v3
@@ -17,10 +20,10 @@ jobs:
           github_user_name: Adityakumar0008
           outputs: |
             dist/pacman-contribution-graph.svg?game=pacman
-            dist/pacman-contribution-graph-dark.svg?game=pacman&color_snake=yellow&color_dot[]=010101&color_dot[]=0d4429&color_dot[]=006d32&color_dot[]=26a641&color_dot[]=39d353
+            dist/pacman-contribution-graph-dark.svg?game=pacman
 
       - name: Push to pacman-output branch
-        uses: crazy-max/ghaction-github-pages@v3
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: pacman-output
           build_dir: dist
