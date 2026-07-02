@@ -17,10 +17,9 @@
 
 ### 🐾 Contribution Graph
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AdityaKumar0008/Adityakumar0008/pacman-output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/AdityaKumar0008/Adityakumar0008/pacman-output/pacman-contribution-graph.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/AdityaKumar0008/Adityakumar0008/pacman-output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/AdityaKumar0008/Adityakumar0008/pacman-output/pacman-contribution-graph.svg">
 </picture>
-
 ---
 [![](https://komarev.com/ghpvc/?username=Adityakumar0008&color=blue&style=flat)](https://visitcount.itsvg.in)
